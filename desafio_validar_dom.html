@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+
+	<script>
+		
+		function mudaCor(corDeFundo) {
+			document.getElementById('campo').style.background = '#FFFF00'
+		}
+
+		function validaCor() {
+			var valorDoCampo = document.getElementById('campo').value
+
+			if(valorDoCampo.length < 3) {
+				document.getElementById('campo').style.background = '#FF0000'
+			} else if (valorDoCampo.length >= 3) {
+				document.getElementById('campo').style.background = '#00FF00'
+			}
+
+		}
+
+	</script>
+
+</head>
+<body>
+
+	<input type="text" onfocus="mudaCor()" onblur="validaCor()" id="campo">
+
+</body>
+</html>

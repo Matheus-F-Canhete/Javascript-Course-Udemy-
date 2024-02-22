@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+
+	<script>
+		
+		var nota = prompt('Digite aqui a sua nota:')
+		var faltas = prompt('Digite aqui a quantidade de faltas:')
+		var media = 7
+		var faltas_maximas = 15
+
+
+
+		if (nota >= media && nota <= 10 && faltas <= faltas_maximas) {
+			document.write('Parabéns! Você foi aprovado!')
+		} else if (nota > 10 || nota < 0) {
+			document.write('Por favor, digite um valor de nota válido ')
+		} else {
+			document.write('Que pena! Você foi reprovado')
+		}
+
+		// var resultado = (nota >= media && nota <= 10 && faltas <= faltas_maximas) ? "Aprovado" : "Reprovado"
+		// document.write(resultado)
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+
+	<script> 
+
+		var largura = parseInt(prompt('Digite aqui a largura do terreno:'))
+		var comprimento = parseInt(prompt('Digite aqui o comprimento do terreno:'))
+
+		function calcularAreaTerreno () {
+
+			//lógica
+			var area = largura * comprimento
+
+			return area 
+
+		}
+
+		area = calcularAreaTerreno(largura, comprimento)
+
+		document.write("O terreno possui " + area + " metros quadrados.")
+
+
+		/*
+		// Flexibilidade de parâmetros nas funções
+
+		function soma(a, b) {
+			return a + b
+		}
+
+		console.log(soma(2, 7))
+		*/
+
+	</script>
+
+</head>
+<body>
+
+</body>
+</html>
